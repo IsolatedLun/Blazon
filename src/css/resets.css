@@ -1,0 +1,35 @@
+/* Defaults */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html:focus-within {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+}
+
+img,
+picture {
+    display: block;
+    max-width: 100%;
+}
+
+/* Remove all animations and transitions */
+@media(prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+        animation-iteration-count: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
