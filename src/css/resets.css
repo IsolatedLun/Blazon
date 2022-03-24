@@ -42,9 +42,18 @@ video {
 }
 
 button,
-input {
+input,
+textarea {
+    color: var(--clr-foreground);
     background-color: transparent;
     border: 0;
+}
+
+textarea {
+    min-height: 2.25rem;
+}
+
+button {
     cursor: pointer;
 }
 
@@ -61,6 +70,8 @@ a {
     --clr-foreground: hsl(0 0% 100%);
     --clr-background: hsl(228 7% 13%);
 
+    --clr-background-200: hsl(228 7% 26%);
+    --clr-background-300: hsl(228 7% 20%);
     --clr-background-500: hsl(228 7% 8%);
     --clr-background-600: hsl(228 7% 4%);
 
@@ -74,8 +85,13 @@ a {
     --clr-primary-500: hsl(207 100% 40%);
     --clr-primary-600: hsl(207 100% 26%);
 
+    --clr-err-400: hsl(3 100% 52%);
+    --clr-err-500: hsl(3 100% 42%);
+    --clr-err-600: hsl(3 100% 32%);
+
     --nav-spacing: 1.25em;
     --button-spacing: 1em;
+    --input-spacing: 0.45em;
     --card-spacing: 1.5em;
     --footer-spacing: 1.5em;
 

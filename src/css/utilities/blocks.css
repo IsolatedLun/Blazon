@@ -28,6 +28,11 @@
     border-radius: 50%;
 }
 
+/* Request form */
+.request-form {
+    --spacing: 1.25em;
+}
+
 /* Footer */
 .footer {
     font-size: calc(var(--fs-300));
@@ -42,4 +47,14 @@
 
 .footer .footer__list {
     --gap: 0.25em;
+}
+
+@media screen and (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+    }
+
+    .footer > div {
+        margin-top: 0.5em;
+    }
 }

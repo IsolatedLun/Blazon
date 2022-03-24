@@ -50,6 +50,14 @@
     gap: var(--gap, 0.5em);
 }
 
+/* Positions */
+.absolute-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 /* Buttons */
 .button {
     font-size: calc(var(--fs-450) * 0.85);
@@ -70,6 +78,14 @@
     background-color: var(--clr-primary-400);
 }
 
+/* Inputs */
+.input {
+    font-size: var(--fs-450);
+    padding: calc(var(--input-spacing) * 0.5) var(--input-spacing);
+    background-color: var(--clr-background-300);
+    border: 2px solid var(--clr-neutral-300);
+}
+
 /* Profiles */
 .profile {
     width: var(--radius, 3.5em);
@@ -86,7 +102,7 @@
 }
 
 /* Lists */
-.link-list[data-muted] {
+[class*='-list'][data-muted] {
     color: var(--clr-neutral-300);
 }
 
