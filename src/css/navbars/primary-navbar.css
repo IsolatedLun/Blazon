@@ -1,0 +1,4 @@
+.primary-navbar {
+    padding: calc(var(--nav-spacing) * 0.5) var(--nav-spacing);
+    background-color: var(--clr-background-500);
+}

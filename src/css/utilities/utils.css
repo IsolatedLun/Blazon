@@ -1,0 +1,32 @@
+/* Headers */
+.header-700 {
+    font-size: var(--fs-700);
+}
+
+/* Font weights */
+.fw-normal {
+    font-weight: var(--fw-400);
+}
+
+.fw-bold {
+    font-weight: var(--fw-800);
+}
+
+/* Texts */
+.text-center {
+    text-align: center;
+}
+
+.text-neutral-300 {
+    color: var(--clr-neutral-300);
+}
+
+/* Borders */
+.br-100 {
+    border-radius: 100vw;
+}
+
+/* Colors */
+.clr-primary-400 {
+    color: var(--clr-primary-400);
+}

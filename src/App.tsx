@@ -1,9 +1,15 @@
+import Home from './components/Home';
+import PrimaryNav from './components/layout/PrimaryNav';
+
 function App() {
 
   return (
-    <div className="App">
-      meow
-    </div>
+    <>
+      <PrimaryNav />
+      <main className="main-container">
+        <Home />
+      </main>
+    </>
   )
 }
 

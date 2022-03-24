@@ -1,1 +1,7 @@
 @import url("resets.css");
+@import url('utilities/compositions.css');
+@import url('utilities/utils.css');
+@import url('utilities/blocks.css');
+
+@import url('navbars/primary-navbar.css');
+@import url('home/home.css');
