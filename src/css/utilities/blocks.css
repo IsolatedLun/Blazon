@@ -1,5 +1,45 @@
 .main-container {
     display: grid;
     max-width: 1200px;
+    width: 100%;
     margin-inline: auto;
+}
+
+/* Home */
+.showcase {
+    --spacing: 0.85em;
+}
+
+.platforms .platform__header {
+    margin-bottom: 1.25em;
+}
+
+.platforms .card {
+    --gap: 0.75em;
+    position: relative;
+    box-shadow: 0 0 9px 2px var(--shadow-primary);
+}
+
+.platforms .card__profile-container {
+    position: absolute;
+    top: -50px;
+    padding: var(--card-container-spacing, 0.25em);
+    background-color: var(--clr-background);
+    border-radius: 50%;
+}
+
+/* Footer */
+.footer {
+    font-size: calc(var(--fs-300));
+    margin-top: auto;
+    background-color: var(--clr-background-600);
+    padding: var(--footer-spacing);
+}
+
+.footer .list__header {
+    display: inline-block;
+}
+
+.footer .footer__list {
+    --gap: 0.25em;
 }
