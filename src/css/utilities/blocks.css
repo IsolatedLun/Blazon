@@ -2,10 +2,15 @@
     display: grid;
     max-width: 1200px;
     width: 100%;
+    padding: calc(var(--content-spacing) * 0.5) var(--content-spacing);
     margin-inline: auto;
 }
 
 /* Home */
+.home > div {
+    margin-block: 2em;
+}
+
 .showcase {
     --spacing: 0.85em;
 }
@@ -17,7 +22,6 @@
 .platforms .card {
     --gap: 0.75em;
     position: relative;
-    box-shadow: 0 0 9px 2px var(--shadow-primary);
 }
 
 .platforms .card__profile-container {
@@ -31,6 +35,11 @@
 /* Request form */
 .request-form {
     --spacing: 1.25em;
+}
+
+/* Inputs */
+.input-container {
+    position: relative;
 }
 
 /* Footer */

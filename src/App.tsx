@@ -10,7 +10,7 @@ function App() {
   return (
     <Router>
       <PrimaryNav />
-      <main className="main-container" id='main-content'>
+      <main aria-label="Main content" className="main-container" id='main-content'>
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/request' element={<Request />} />

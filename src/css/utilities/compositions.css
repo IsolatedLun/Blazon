@@ -41,6 +41,12 @@
     place-items: center;
 }
 
+.grid-items-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--grid-gap, 1em);
+}
+
 /* Flows */
 .flow > * + * {
     margin-top: var(--spacing, 0.5rem);
@@ -86,6 +92,16 @@
     border: 2px solid var(--clr-neutral-300);
 }
 
+.input-container[data-after]::after {
+    content: attr(data-after);
+    position: absolute;
+    font-size: var(--fs-500);
+    color: var(--clr-neutral-300);
+    top: 45%;
+    left: -16px;
+    transform: translate(-50%, -50%);
+}
+
 /* Profiles */
 .profile {
     width: var(--radius, 3.5em);
@@ -97,8 +113,15 @@
 /* Cards */
 .card {
     padding: var(--card-spacing);
-    background-color: var(--clr-background-500);
     border-radius: var(--brdr-1);
+}
+
+.card:not([data-background]) {
+    background-color: var(--clr-background-500);
+}
+
+.card[data-background='light'] {
+    background-color: var(--clr-background-300);
 }
 
 /* Lists */

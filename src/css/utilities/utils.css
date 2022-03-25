@@ -1,4 +1,8 @@
 /* Headers */
+.header-800 {
+    font-size: var(--fs-800);
+}
+
 .header-700 {
     font-size: var(--fs-700);
 }
@@ -72,3 +76,7 @@
     margin-bottom: 2em;
 }
 
+/* Displays */
+.inline-block {
+    display: inline-block;
+}

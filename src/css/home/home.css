@@ -1,3 +1,9 @@
 .cards {
     --gap: 2em;
 }
+
+@media screen and (max-width: 768px) {
+    .process .process__grid {
+        grid-template-columns: 1fr;
+    }
+}

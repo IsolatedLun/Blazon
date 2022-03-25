@@ -50,6 +50,7 @@ textarea {
 }
 
 textarea {
+    max-width: 100%;
     min-height: 2.25rem;
 }
 
@@ -89,6 +90,7 @@ a {
     --clr-err-500: hsl(3 100% 42%);
     --clr-err-600: hsl(3 100% 32%);
 
+    --content-spacing: 0.1rem;
     --nav-spacing: 1.25em;
     --button-spacing: 1em;
     --input-spacing: 0.45em;
@@ -137,5 +139,9 @@ a {
         transition-duration: 0.01ms !important;
         animation-iteration-count: 0.01ms !important;
         scroll-behavior: auto !important;
+    }
+
+    :root {
+        --content-spacing: 1em;
     }
 }

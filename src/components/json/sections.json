@@ -1,0 +1,17 @@
+[
+    {
+        "icon": "\uf017",
+        "title": "Send a request",
+        "text": "Request a promo for your project and wait for response."
+    },
+    {
+        "icon": "\uf086",
+        "title": "Communication",
+        "text": "If accepted, we will contact you on telegram!"
+    },
+    {
+        "icon": "\uf201",
+        "title": "Profit",
+        "text": "Our influencers will promote your project and make it go viral."
+    }
+]
