@@ -24,3 +24,10 @@ export interface INF_Stat {
     key: string | number;
     value: string | number;
 }
+
+export interface INF_RequestForm {
+    name: string;
+    budget: number;
+    telegram: string;
+    extraInformation: string;
+}

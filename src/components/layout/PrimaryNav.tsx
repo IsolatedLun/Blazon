@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 const PrimaryNav = () => {
   return (
     <nav aria-label="Primary navigation" role='Primary navigation' className='[ primary-navbar ] [ flex-between ]'>
+        <a className="[ primary-navbar__skip ] [ button ]" href="#main-content">Skip navigation</a>
         <h1 className="[ nav__title ] [ header-700 clr-primary-400 ]">Blazon</h1>
         <ul className='[ nav__links ] [ link-list flex-horizontal-items ]' role='list'>
           <li><Link to="/" className='[ br-100 ]'>Home</Link></li>
