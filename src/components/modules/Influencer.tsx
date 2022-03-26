@@ -10,7 +10,6 @@ const Stat = ({ stat } : { stat: [string | number, string | number] }) => {
 }
 
 const Influencer = ({ influencer } : { influencer: INF_Influencer }) => {
-  console.log(influencer.followers)
   return (
     <div className='[ influencer ] [ card flex-between ]' data-background='light'>
         <a href={influencer.link} className='[ link fs-450 ]' target='_blank'>{ influencer.username }</a>

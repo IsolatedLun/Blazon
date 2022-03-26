@@ -7,7 +7,7 @@ const Footer = () => {
             <h4 className='[ list__header ] [ header-400 brdr-underline ]'>Access</h4>
             <ul className='[ footer__list ] [ link-list flex-vertical-items ]' role='list' data-muted data-round>
                 <li><Link to="/">Home</Link></li>
-                <li><Link to="/influencers">Influencers</Link></li>
+                <li><a href="/#influencers">Influencers</a></li>
                 <li><Link to='/request'>Request promo</Link></li>
             </ul>
         </div>

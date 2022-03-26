@@ -12,7 +12,7 @@
 }
 .primary-navbar .primary-navbar__skip {
     position: absolute;
-    transform: translateX(-25vw);
+    transform: translateX(-25rem);
     transition: transform 100ms ease-in-out;
 }
 
