@@ -4,6 +4,7 @@ import PrimaryNav from './components/layout/PrimaryNav';
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Request from './components/Request';
+import Influencers from './components/Influencers';
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/request' element={<Request />} />
+          <Route path='/influencers/:type' element={<Influencers />} />
 
           <Route path='*' element={<p className='[ clr-error-400 header-700 ]'>[404] Page not found D:</p>} />
         </Routes>

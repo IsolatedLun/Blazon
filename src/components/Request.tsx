@@ -19,6 +19,9 @@ const Request = () => {
             <div className="input-container" data-after='@'>
                 <input id='contact-input' className='[ input br-1 ]' type='text' />
             </div>
+            <ul className="form-list" data-muted>
+                <li>This is how we'll contact you.</li>
+            </ul>
         </div>
 
         <div className="[ form__part ] [ flex-flow flex-col flex-center ]">

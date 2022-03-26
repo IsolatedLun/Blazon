@@ -146,3 +146,25 @@
 .link-list li a:is(:hover, :focus) {
     background-color: var(--hover);
 }
+
+/* Link */
+.link {
+    position: relative;
+    color: var(--clr-link);
+    border-bottom: 2px solid transparent;
+}
+
+.link::after {
+    content: '\f35d';
+    position: absolute;
+    font-size: var(--fs-400);
+    font-weight: bold;
+    font-family: 'Font Awesome 5 Free';
+    top: 0;
+    bottom: -50%;
+    right: -20px;
+}
+
+.link:is(:hover, :focus) {
+    border-bottom: 2px solid currentColor;
+}

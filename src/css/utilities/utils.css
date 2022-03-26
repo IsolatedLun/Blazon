@@ -33,6 +33,10 @@
     color: var(--clr-neutral-300);
 }
 
+.fs-450 {
+    font-size: var(--fs-450);
+}
+
 /* Borders */
 .brdr-underline {
     border-bottom: var(--brdr-width, 1.5px) solid currentColor;
