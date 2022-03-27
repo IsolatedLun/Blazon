@@ -9,6 +9,10 @@
     box-sizing: border-box;
 }
 
+*[data-device='mobile'] {
+    display: none !important;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -148,5 +152,13 @@ a {
 @media screen and (max-width: 768px) {
     :root {
         --content-spacing: 1em;
+    }
+
+    [data-device='desktop'] {
+        display: none !important;
+    }
+
+    [data-device='mobile'] {
+        display: block !important;
     }
 }

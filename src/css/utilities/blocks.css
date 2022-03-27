@@ -6,24 +6,6 @@
     margin-inline: auto;
 }
 
-/* Primary Navbar */
-.primary-nav .nav__title {
-    transition: transform 100ms ease-in-out;
-}
-.primary-navbar .primary-navbar__skip {
-    position: absolute;
-    transform: translateX(-25rem);
-    transition: transform 100ms ease-in-out;
-}
-
-.primary-navbar .primary-navbar__skip:focus + * {
-    transform: translateX(12rem);
-}
-
-.primary-navbar .primary-navbar__skip:focus {
-    transform: translateX(0);
-}
-
 /* Home */
 .home > div {
     margin-block: 2em;

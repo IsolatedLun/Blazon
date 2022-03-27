@@ -2,3 +2,37 @@
     padding: calc(var(--nav-spacing) * 0.5) var(--nav-spacing);
     background-color: var(--clr-background-500);
 }
+
+.primary-nav .nav__title {
+    transition: transform 100ms ease-in-out;
+}
+.primary-navbar .primary-navbar__skip {
+    position: absolute;
+    transform: translateX(-25rem);
+    transition: transform 100ms ease-in-out;
+}
+
+.primary-navbar .primary-navbar__skip:focus + * {
+    transform: translateX(12rem);
+}
+
+.primary-navbar .primary-navbar__skip:focus {
+    transform: translateX(0);
+}
+
+/* Side navbar */
+.side-navbar {
+    display: none;
+    position: fixed;
+    inset: 0 0 0 auto;
+    padding: calc(var(--nav-spacing) * 0.5) var(--nav-spacing);
+    width: 256px;
+    transform: translateX(20rem);
+    background-color: var(--clr-background-500);
+    transition: transform 150ms ease-in-out 50ms;
+}
+
+.side-navbar[data-state='on'] {
+    display: flex;
+    transform: translateX(0);
+}
