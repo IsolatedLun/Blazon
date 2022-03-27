@@ -6,7 +6,7 @@ import Influencer from './modules/Influencer';
 
 const Influencers = () => {
     const { type } = useParams();
-    let [influencers, setInfluencers] = useState<INF_Influencer[]>([]);
+    const [influencers, setInfluencers] = useState<INF_Influencer[]>([]);
 
     useEffect(() => {
         if(type)
@@ -19,10 +19,21 @@ const Influencers = () => {
             }
     }, [type])
 
-    if(influencers && influencers.length > 0)
+    function sortByFollowers(): void {
+        const arr = influencers.sort((a, b) => b.numerical_followers - a.numerical_followers);
+        setInfluencers([...arr]);
+    }
+
+    if(typeof influencers === 'object')
         return (
             <div className='[ influencers ] [ flex-vertical-items margin-block-1 ]'>
-                <h2>{ influencers.length } influencers</h2>
+                <div className='[ flex-between ]'>
+                    <h2>{ influencers.length } influencers</h2>
+                    <div className="[ controls ] [ flex-horizontal-items ]">
+                        <button onClick={() => sortByFollowers()} aria-label='Sort by most popular button'
+                            className='[ button ]'>Most popular</button>
+                    </div>
+                </div>
                 {
                     influencers.map(influencer => ( <Influencer influencer={influencer} /> ))
                 }

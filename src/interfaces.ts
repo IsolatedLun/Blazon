@@ -14,6 +14,7 @@ export interface INF_Influencer {
     username: string;
     link: string;
     followers: string;
+    numerical_followers: number;
 }
 
 export interface INF_InfluencerDict {

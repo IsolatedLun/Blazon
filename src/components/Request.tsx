@@ -19,10 +19,10 @@ const Request = () => {
         e.preventDefault()
 
         const toSend = `
-        Project name: ${request.name} 
-        Budget: ${request.budget} 
-        Telegram: @${request.telegram} 
-        Extra: ${request.extraInformation}`;
+        | Project name: ${request.name} 
+        | Budget: ${request.budget} 
+        | Telegram: @${request.telegram} 
+        | Extra: ${request.extraInformation}`;
 
         window.open(`mailto:isolunaj3@gmail.com?subject=${request.name}'s promotion&body=${toSend}`);
     }
