@@ -37,13 +37,6 @@
     --spacing: 1.25em;
 }
 
-/* Influencers */
-@media screen and (max-width: 768px) {
-    .influencer {
-        flex-direction: column;
-    }
-}
-
 /* Inputs */
 .input-container {
     position: relative;
@@ -66,6 +59,14 @@
 }
 
 @media screen and (max-width: 768px) {
+    .request-form #extra-input {
+        height: 16rem;
+    }
+
+    .influencer {
+        flex-direction: column;
+    }
+
     .footer {
         flex-direction: column;
     }

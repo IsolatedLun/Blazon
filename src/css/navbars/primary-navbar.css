@@ -30,6 +30,7 @@
     transform: translateX(20rem);
     background-color: var(--clr-background-500);
     transition: transform 150ms ease-in-out 50ms;
+    z-index: 99999999999;
 }
 
 .side-navbar[data-state='on'] {

@@ -56,10 +56,10 @@ const Request = () => {
                 </ul>
             </div>
 
-            <div className="[ form__part ] [ flex-flow flex-col flex-center ]">
+            <div className="[ form__part ] [ flex-flow flex-col flex-center w-100 ]">
                 <label className='[ header-500 ]' htmlFor='extra-input'>Extra information</label>
                 <textarea onInput={(e) => handleInput(e)} name='extraInformation' spellCheck='false'
-                    id='extra-input' className='[ input br-1 ]' />
+                    id='extra-input' className='[ input br-1 w-100 ]' />
             </div>
 
             <button className='button' data-variant='ghost'>Send</button>
